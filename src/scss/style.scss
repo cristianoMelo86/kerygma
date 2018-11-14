@@ -1,0 +1,13 @@
+@import "base/base.scss";
+// Theme
+@import "theme/theme.scss";
+
+
+.wrapper{
+	background-color: $primary;
+	width: 1024px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+

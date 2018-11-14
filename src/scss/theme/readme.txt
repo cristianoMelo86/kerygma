@@ -1,0 +1,3 @@
+Theme:
+
+Estilos de fontes e cores. Você pode dividir os temas por pasta. font-family, color, background-color...
