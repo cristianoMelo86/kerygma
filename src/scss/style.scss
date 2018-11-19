@@ -1,13 +1,17 @@
-@import "base/base.scss";
-// Theme
-@import "theme/theme.scss";
+// Font Awsome
+@import "font-awsome-scss/fontawesome.scss";
+@import "font-awsome-scss/solid.scss";
+@import "font-awsome-scss/regular.scss";
+@import "font-awsome-scss/brands.scss";
+
+// directory - Theme
+@import "theme/_theme.scss";
+
+// directory - Layout
+@import "layout/layout.scss";
+
+// directory - Module
+@import "module/module.scss";
 
 
-.wrapper{
-	background-color: $primary;
-	width: 1024px;
-	height: 200px;
-	margin: 0 auto;
-}
-
-
+@import "base/_base.scss";

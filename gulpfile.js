@@ -16,6 +16,11 @@ gulp.task("cache:js", function() {
 	del("./dist/js/app.js")
 });
 
+gulp.task("move-files", function(){
+	return gulp.src("src/webfonts/*")
+		   .pipe(gulp.dest("dist/webfonts/"))
+});
+
 /* Task compile scss to css */
 gulp.task("sass", ['cache:css'], function() {
 	return gulp.src("./src/scss/style.scss")
@@ -62,13 +67,13 @@ gulp.task("server", function() {
 	});
 
 	/* Watch */
-	gulp.watch("./src/scss/**/*.scss", ['sass']);
+	gulp.watch("./src/scss/**/**/*.scss", ['sass']);
 	gulp.watch("./src/components/bootstrap/scss/**/*.scss", ['sass']);
 	gulp.watch("./src/js/**/*.js", ['js']);
 	gulp.watch("./src/index.html", ['html']);
 });
 
-gulp.task("default", ["sass", "html", "js", "concat-js", "server"]);
+gulp.task("default", ["move-files", "sass", "html", "js", "concat-js", "server"]);
 
 
 

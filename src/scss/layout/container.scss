@@ -1,0 +1,13 @@
+.container{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+	"header"
+	"bio";
+	grid-template-columns: 1fr;
+
+	/*
+		@media(min-width: 48rem){
+		}
+	*/
+}
