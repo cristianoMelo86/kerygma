@@ -21,6 +21,11 @@ gulp.task("move-files", function(){
 		   .pipe(gulp.dest("dist/webfonts/"))
 });
 
+gulp.task("move-assets", function(){
+	return gulp.src("src/assets/*")
+		   .pipe(gulp.dest("dist/img/"))
+});
+
 /* Task compile scss to css */
 gulp.task("sass", ['cache:css'], function() {
 	return gulp.src("./src/scss/style.scss")
@@ -73,7 +78,7 @@ gulp.task("server", function() {
 	gulp.watch("./src/index.html", ['html']);
 });
 
-gulp.task("default", ["move-files", "sass", "html", "js", "concat-js", "server"]);
+gulp.task("default", ["move-files", "move-assets","sass", "html", "js", "concat-js", "server"]);
 
 
 

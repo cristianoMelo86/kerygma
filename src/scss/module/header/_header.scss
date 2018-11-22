@@ -1,9 +1,10 @@
 .m-logo{
+	color: $white;
 	width: $w10;
 	font-size: 5rem;
 	display: flex;
 	justify-content: center;
-	color: $primary;
+	color: $white;
 }
 
 .m-menu{
@@ -15,10 +16,26 @@
 			padding: 10px;
 			.m-menu-link{
 				text-decoration: none;
-				color: $primary;
+				color: $white;
 				font-size: 1rem;
 			}
 		}
 	}
 }
 
+.m-slider{
+	height: 85vh;
+	width: $w100;
+	padding-top: 120px;
+	
+	.m-slider__title{
+		font-size: 8rem;
+		font-weight: 900;
+	}
+
+	.m-slider__desc{
+		width: $w50;
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+}
