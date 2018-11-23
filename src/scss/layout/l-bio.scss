@@ -1,6 +1,12 @@
 .l-bio{
-	background-color: #6D3035;
+	@extend %padding-xl;
+
+	padding-top: 70px;
+	padding-bottom:70px;
 	grid-area: bio;
 	width: 100%;
-	min-height: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
+
