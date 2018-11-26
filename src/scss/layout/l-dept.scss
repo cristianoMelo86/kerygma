@@ -1,0 +1,11 @@
+.l-dept{
+	@extend %padding-xl;
+	padding-top: 70px;
+	padding-bottom:70px;
+	grid-area: departamento;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
