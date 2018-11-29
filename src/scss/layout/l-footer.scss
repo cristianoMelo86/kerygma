@@ -1,0 +1,8 @@
+.l-footer{
+	@extend %padding-xl;
+	display: flex;
+	grid-area: footer;
+	width: 100%;
+	flex-wrap: wrap;
+	background-color: $black;
+}

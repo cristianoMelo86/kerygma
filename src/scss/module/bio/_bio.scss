@@ -5,13 +5,12 @@
 	@extend %font-title;
 	width: $w100;
 	text-align: center;
-	margin: 50px 0;
+	
 }
 
 .m-bio__desc{
 	@extend %font-desc;
 	text-align: center;
-	margin-bottom: 60px;
 	width: $w100;
 	color: $primary;
 }

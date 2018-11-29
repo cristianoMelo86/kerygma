@@ -1,0 +1,51 @@
+.m-programacao__foto{
+	width: 40%;
+	img{
+		width: 100%;
+		height: 100%; //500px;
+		object-fit: cover;
+	}
+}
+
+.m-programacao__content{
+	width: 55%;
+	.m-programacao__title{
+		@extend %font-title;
+	}
+	
+	.m-programacao-card{
+		width: 100%;
+		display: flex;
+		margin-bottom: 50px;
+		border-bottom: solid 1px red;
+
+		.wrapper-card{
+			width: 90%;
+			.m-programacao-card__header{
+				width: 90%;
+				.m-programacao-card__title{
+					font-size: 1.3rem;
+					font-weight: 600;
+					margin-bottom: 20px;
+				}
+			}
+
+			.m-programacao-card__desc{
+				@extend %font-desc;
+				font-size: .9rem;
+				width: 95%;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.m-programacao-card__image{
+		width: 10%;
+		display: flex;
+		font-size: 2.5rem;
+		justify-content: center;
+		align-items: center;
+		color: $primary;
+	}
+}
+ 	

@@ -24,8 +24,8 @@ $w100: 100%;
 %padding-xl{
 	padding-left: 30px;
 	padding-right: 30px;
-	padding-bottom: 0;
-	padding-top: 0;
+	padding-bottom: 70px;
+	padding-top: 70px;
 }
 
 /* Fonts */
@@ -33,12 +33,14 @@ $w100: 100%;
 	font-size: 2.5rem;
 	font-weight: 600;
 	color: $primary;
+	margin: 50px 0;
 }
 
 %font-desc{
 	font-size: 1.3rem;
 	font-weight: 400;
 	line-height: 1.7;
+	margin: 0 0 50px 0;
 	font-style: italic;
 }
 
